@@ -1,5 +1,5 @@
 skill:
-  id: '@atomist/helloworld-item'
+  id: '@atomist/helloworld-skill'
   name: Hello World Skill
   version: '0.1.0' 
   author: Atomist
