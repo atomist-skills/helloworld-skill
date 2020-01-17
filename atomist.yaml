@@ -3,7 +3,7 @@ skill:
   name: Hello World Skill
   version: '0.1.0' 
   author: Atomist
-  description: 'Atomist catalog skill to demostrate a simple handler'
+  description: 'Atomist Skill to demostrate a simple command handler'
   category:
   - chat 
   license: Apache-2.0
