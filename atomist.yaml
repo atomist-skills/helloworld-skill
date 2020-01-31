@@ -21,7 +21,7 @@ skill:
     timeout: 540
     name: nodejs10
     entry_point: entryPoint
-        
+         
 commands:
   # Register a hello world command
   - name: HelloWorld
