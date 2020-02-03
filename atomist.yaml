@@ -12,10 +12,10 @@ skill:
   icon: 'https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/npm-512.png'
 
   package:
-    - use: 'atomist/package-sdm-skill/package'
+    - use: atomist/package-sdm-skill/package
       parameters:
-        main: 'node_modules/@atomist/skill/lib/function.js'
-
+        main: node_modules/@atomist/skill/lib/function.js
+ 
   runtime:
     memory: 1024
     timeout: 540
