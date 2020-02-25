@@ -27,9 +27,15 @@ exports.handler = async (ctx) => {
 
     const metadata = {
         severity: "AUDIT",
+        labels: {
+            execution_id: ctx.executionId,
+        },
         resource: {
-            type: "skill",
-            correlation_id: ctx.correlationId,
+            type: "cloud_function",
+            labels: {
+                correlation_id: ctx.correlationId,
+                workspace_id: ctx.workspaceId,
+            },
         },
     };
 
