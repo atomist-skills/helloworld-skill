@@ -21,12 +21,16 @@ const logging_1 = require("@google-cloud/logging");
 exports.handler = async (ctx) => {
 
     const logging = new logging_1.Logging();
-    const log = logging.log(`skills/${ctx.correlationId}`);
+    const log = logging.log(`skills_audit`);
 
     const text = 'Hello, world!';
 
     const metadata = {
-        resource: {type: 'global'},
+        severity: "AUDIT",
+        resource: {
+            type: "skill",
+            correlation_id: ctx.correlationId,
+        },
     };
 
     const entry = log.entry(metadata, text);
