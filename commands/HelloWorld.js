@@ -16,32 +16,12 @@
 
 const project_1 = require("@atomist/skill/lib/project");
 const secrets_1 = require("@atomist/skill/lib/secrets");
-const logging_1 = require("@google-cloud/logging");
 
 exports.handler = async (ctx) => {
-
-    const logging = new logging_1.Logging();
-    const log = logging.log(`skills_audit`);
-
-    const text = 'Hello, world!';
-
-    const metadata = {
-        severity: 300,
-        labels: {
-            execution_id: ctx.executionId,
-            correlation_id: ctx.correlationId,
-            workspace_id: ctx.workspaceId,
-        },
-        resource: {
-            type: "cloud_function",
-        },
-    };
-
-    const entry = log.entry(metadata, text);
-    await log.write(entry);
-
+    await ctx.audit.log("Hello world handler starting");
     const params = await ctx.parameters.prompt({owner: {}, repo: {}});
     const credential = await ctx.credential.resolve(secrets_1.gitHubAppToken(params));
     const project = await ctx.project.clone(project_1.gitHubComRepository(Object.assign(Object.assign({}, params), {credential})));
     await ctx.message.respond(`Project ${params.owner}/${params.repo} has ${await project.totalFileCount()} files`);
+    await ctx.audit.log("Hello world handler ended");
 };
