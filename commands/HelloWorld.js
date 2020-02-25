@@ -16,6 +16,7 @@
 
 const project_1 = require("@atomist/skill/lib/project");
 const secrets_1 = require("@atomist/skill/lib/secrets");
+const logging_1 = require("@atomist/skill-logging/lib/logging");
 
 exports.handler = async (ctx) => {
     await ctx.audit.log("Hello world handler starting");
@@ -23,5 +24,5 @@ exports.handler = async (ctx) => {
     const credential = await ctx.credential.resolve(secrets_1.gitHubAppToken(params));
     const project = await ctx.project.clone(project_1.gitHubComRepository(Object.assign(Object.assign({}, params), {credential})));
     await ctx.message.respond(`Project ${params.owner}/${params.repo} has ${await project.totalFileCount()} files`);
-    await ctx.audit.log("Hello world handler ended");
+    await ctx.audit.log("Hello world handler ended", logging_1.Severity.WARNING);
 };
