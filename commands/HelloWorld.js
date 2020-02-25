@@ -26,7 +26,7 @@ exports.handler = async (ctx) => {
     const text = 'Hello, world!';
 
     const metadata = {
-        severity: 200,
+        severity: 300,
         labels: {
             execution_id: ctx.executionId,
             correlation_id: ctx.correlationId,
