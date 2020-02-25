@@ -16,11 +16,11 @@
 
 const project_1 = require("@atomist/skill/lib/project");
 const secrets_1 = require("@atomist/skill/lib/secrets");
-const Logging = require("@google-cloud/logging");
+const logging = require("@google-cloud/logging");
 
 exports.handler = async (ctx) => {
 
-    const logging = new Logging();
+    const logging = new logging.Logging();
     const log = logging.log(`skills/${ctx.correlationId}`);
 
     const text = 'Hello, world!';
