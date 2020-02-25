@@ -15,7 +15,8 @@ skill:
     - use: atomist/package-sdm-skill/package
       parameters:
         main: node_modules/@atomist/skill/lib/function.js
- 
+        dependencies: keep
+
   runtime:
     memory: 1024
     timeout: 540

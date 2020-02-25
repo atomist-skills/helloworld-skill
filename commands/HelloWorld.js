@@ -16,10 +16,24 @@
 
 const project_1 = require("@atomist/skill/lib/project");
 const secrets_1 = require("@atomist/skill/lib/secrets");
+const Logging = require("@google-cloud/logging");
 
 exports.handler = async (ctx) => {
-    const params = await ctx.parameters.prompt({ owner: {}, repo: {} });
+
+    const logging = new Logging();
+    const log = logging.log(`skills/${ctx.correlationId}`);
+
+    const text = 'Hello, world!';
+
+    const metadata = {
+        resource: {type: 'global'},
+    };
+
+    const entry = log.entry(metadata, text);
+    await log.write(entry);
+
+    const params = await ctx.parameters.prompt({owner: {}, repo: {}});
     const credential = await ctx.credential.resolve(secrets_1.gitHubAppToken(params));
-    const project = await ctx.project.clone(project_1.gitHubComRepository(Object.assign(Object.assign({}, params), { credential })));
+    const project = await ctx.project.clone(project_1.gitHubComRepository(Object.assign(Object.assign({}, params), {credential})));
     await ctx.message.respond(`Project ${params.owner}/${params.repo} has ${await project.totalFileCount()} files`);
 };
