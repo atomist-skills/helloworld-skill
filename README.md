@@ -1,7 +1,7 @@
 # `atomist/helloworld-skill`
 
 Atomist Skill to demostrate a simple command handler.
-
+ 
 --- 
 
 Created by [Atomist][atomist]. 
