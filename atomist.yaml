@@ -10,12 +10,11 @@ skill:
   homepage: 'https://github.com/atomist-skills/hellworld-skill'
   repository: 'https://github.com/atomist-skills/hellworld-skill.git'
   icon: 'https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/npm-512.png'
-
+  access_key: KEY-x8w876yucd1k9f4h3x6a
+  
+  
   package:
-    - use: atomist/package-sdm-skill/package
-      parameters:
-        main: node_modules/@atomist/skill/lib/function.js
-        dependencies: keep
+    use: atomist/package-npm-skill
 
   runtime:
     memory: 1024
