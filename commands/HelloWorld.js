@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-// KEY-x8w126yece1kde4h3x6a
+
 const project_1 = require("@atomist/skill/lib/project");
 const secrets_1 = require("@atomist/skill/lib/secrets");
 const logging_1 = require("@atomist/skill-logging/lib/logging");
