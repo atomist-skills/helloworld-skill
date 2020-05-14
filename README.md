@@ -10,8 +10,4 @@ Need Help?  [Join our Slack workspace][slack].
 [atomist]: https://atomist.com/ (Atomist - How Teams Deliver Software)
 [slack]: https://join.atomist.com/ (Atomist Community Slack)
 
-KEY-x8w126yece1kde4h3x6a
-
-
- 
- 
+KEY-x8w126yece1kde4h3x65
