@@ -29,7 +29,7 @@ parameters:
   - string:
       name: foo
       description: Some foo
-      required: false
+      required: false 
 
 commands:
   # Register a hello world command
