@@ -11,4 +11,3 @@ Need Help?  [Join our Slack workspace][slack].
 [slack]: https://join.atomist.com/ (Atomist Community Slack)
 
 KEY-x8w126yece1kde4h3x6a
-Dfss
