@@ -11,6 +11,13 @@ skill:
   repository: 'https://github.com/atomist-skills/hellworld-skill.git'
   icon: 'https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/npm-512.png'
 
+  access_key: 
+  - KEY-x8w576yece1kde4h3x6a
+  - KEY-x8w572yece1kde4h3x6a
+  
+   
+  
+
   package:
     use: atomist/package-npm-skill
 
