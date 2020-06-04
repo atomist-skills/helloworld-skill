@@ -2,10 +2,13 @@
 
 <!---atomist-skill-description:start--->
 
-Atomist Skill to demonstrate a simple command handler.
+Atomist Skill to demonstrate a simple command handler
 
 <!---atomist-skill-description:end--->
 <!---atomist-skill-readme:start--->
+
+# What's it for
+
 <!---atomist-skill-readme:end--->
 
 ---
