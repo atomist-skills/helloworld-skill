@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased](https://github.com/atomist-skills/helloworld-skill/compare/0.2.0...HEAD)
 
+### Removed
+
+-   **BREAKING** Test issue. [#26](https://github.com/atomist-skills/helloworld-skill/issues/26)
+
 ## [0.2.0](https://github.com/atomist-skills/helloworld-skill/tree/0.2.0) - 2020-06-04
 
 ### Added
