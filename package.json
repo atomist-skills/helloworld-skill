@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "functions-framework --target=entryPoint --signature-type=event",
-    "skill": "run-s compile test skill:generate skill:package",
+    "skill": "npm run skill:generate && npm run skill:package",
     "skill:generate": "atm-skill generate",
     "skill:package": "atm-skill package",
     "skill:register": "atm-skill register"
