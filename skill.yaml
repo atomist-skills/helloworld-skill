@@ -1,0 +1,28 @@
+apiVersion: 1
+skill:
+
+  artifacts:
+    gcf:
+      - memory: 1024
+        timeout: 540
+        runtime: nodejs10
+        entryPoint: entryPoint
+        name: gcf
+
+  parameters:
+    - string:
+        name: channel
+        displayName: Name of channel to send messages to
+        description: >-
+          Specify the name of the chat channel you want to send issue
+          notifications to when there are no channels linked
+        required: false
+
+  commands:
+    - name: commentOnIssue
+      displayName: Comment on issue
+      description: Create a new comment on an issue
+      pattern: /^comment on issue.*$/
+
+  subscriptions:
+    - file://graphql/subscription/*.graphql

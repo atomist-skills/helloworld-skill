@@ -14,15 +14,22 @@
  * limitations under the License.
  */
 
+const gitHub = require("@atomist/skill/lib/project/github").gitHub;
 const project = require("@atomist/skill/lib/project");
 const secrets = require("@atomist/skill/lib/secrets");
-const logging = require("@atomist/skill-logging/lib/logging");
 
 exports.handler = async (ctx) => {
-    await ctx.audit.log("Hello world handler starting");
-    const params = await ctx.parameters.prompt({owner: {}, repo: {}});
+    await ctx.audit.log("Adding new comment");
+
+    const params = await ctx.parameters.prompt({ owner: {}, repo: {}, issue: {}, body: {} });
     const credential = await ctx.credential.resolve(secrets.gitHubAppToken(params));
-    const project = await ctx.project.clone(project.gitHubComRepository(Object.assign(Object.assign({}, params), {credential})));
-    await ctx.message.respond(`Project ${params.owner}/${params.repo} cloned at ${project.path()}`);
-    await ctx.audit.log("Hello world handler ended", logging.Severity.INFO);
+
+    const api = gitHub(project.gitHubComRepository({ owner: params.owner, repo: params.repo, credential }));
+    await api.issues.createComment({
+        owner: params.owner,
+        repo: params.repo,
+        issue_number: +params.issue,
+        body: params.body,
+    });
+
 };

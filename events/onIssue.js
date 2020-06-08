@@ -14,29 +14,9 @@
  * limitations under the License.
  */
 
-const skill = require("@atomist/skill/lib/skill");
-
-exports.Skill = skill.skill({
-
-    runtime: {
-        memory: 1024,
-        timeout: 540,
-    },
-
-    parameters: {
-        foo: {
-            type: skill.ParameterType.String,
-            displayName: "Foo",
-            description: "Some foo",
-            required: false,
-        },
-    },
-
-    commands: [{
-        name: "HelloWorld",
-        displayName: "Hello World",
-        description: "Command to demonstrate the usage of a command handler",
-        pattern: /^hello world.*$/,
-    }],
-
-})
+exports.handler = async (ctx) => {
+     const issue = ctx.data.Issue[0];
+     await ctx.message.send(
+         `Issue activity on ${issue.number}: ${issue.title}`,
+         { channels: issue.repo?.channels?.map(c => c.name) || ctx.configuration[0].parameters.channel });
+};
