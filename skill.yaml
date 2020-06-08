@@ -22,7 +22,7 @@ skill:
     - name: commentOnIssue
       displayName: Comment on issue
       description: Create a new comment on an issue
-      pattern: /^comment on issue.*$/
+      pattern: ^comment on issue.*$
 
   subscriptions:
     - file://graphql/subscription/*.graphql
