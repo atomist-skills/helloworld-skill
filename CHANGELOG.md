@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased](https://github.com/atomist-skills/helloworld-skill/compare/0.2.2-1...HEAD)
 
+### Fixed
+
+-   Fix build script. [e9e7f76](https://github.com/atomist-skills/helloworld-skill/commit/e9e7f76b3c0a3d0ff5d9861ba9d305837567cafe)
+
 ## [0.2.2-1](https://github.com/atomist-skills/helloworld-skill/compare/0.2.1...0.2.2-1) - 2020-06-04
 
 ### Fixed
