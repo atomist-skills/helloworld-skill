@@ -10,7 +10,7 @@ This page details all runtime OSS dependencies of `@atomist/helloworld-skill`.
 
 | License | Count |
 |---------|-------|
-|[Apache-2.0](#apache-20)|28|
+|[Apache-2.0](#apache-20)|27|
 |[BSD-2-Clause](#bsd-2-clause)|6|
 |[BSD-3-Clause](#bsd-3-clause)|16|
 |[CC0-1.0](#cc0-10)|1|
@@ -18,16 +18,15 @@ This page details all runtime OSS dependencies of `@atomist/helloworld-skill`.
 |[GPL-3.0](#gpl-30)|1|
 |[ISC](#isc)|30|
 |[MIT AND Zlib](#mit-and-zlib)|1|
-|[MIT](#mit)|212|
+|[MIT](#mit)|214|
 
 #### Apache-2.0
 Apache License 2.0 - [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
 | Name | Version | Publisher | Repository |
 |------|---------|-----------|------------|
-|`@atomist/skill-logging`|`0.1.0-master.20200225155816`|Atomist|[https://github.com/atomist/skill-logging](https://github.com/atomist/skill-logging)|
 |`@atomist/skill-logging`|`0.1.0-master.20200316180914`|Atomist|[https://github.com/atomist/skill-logging](https://github.com/atomist/skill-logging)|
-|`@atomist/skill`|`0.1.0-master.20200604061313`|Atomist|[https://github.com/atomist/skill](https://github.com/atomist/skill)|
+|`@atomist/skill`|`0.1.0-master.20200608150634`|Atomist|[https://github.com/atomist/skill](https://github.com/atomist/skill)|
 |`@atomist/slack-messages`|`1.1.1`|Atomist|[https://github.com/atomist/slack-messages](https://github.com/atomist/slack-messages)|
 |`@google-cloud/common`|`2.4.0`|Google Inc.|[https://github.com/googleapis/nodejs-common](https://github.com/googleapis/nodejs-common)|
 |`@google-cloud/logging`|`7.3.0`|Google Inc.|[https://github.com/googleapis/nodejs-logging](https://github.com/googleapis/nodejs-logging)|
@@ -159,13 +158,13 @@ MIT License - [https://opensource.org/licenses/MIT](https://opensource.org/licen
 |`@octokit/graphql`|`4.5.0`||[https://github.com/octokit/graphql.js](https://github.com/octokit/graphql.js)|
 |`@octokit/plugin-paginate-rest`|`2.2.1`||[https://github.com/octokit/plugin-paginate-rest.js](https://github.com/octokit/plugin-paginate-rest.js)|
 |`@octokit/plugin-request-log`|`1.0.0`||[https://github.com/octokit/plugin-request-log.js](https://github.com/octokit/plugin-request-log.js)|
-|`@octokit/plugin-rest-endpoint-methods`|`3.14.0`||[https://github.com/octokit/plugin-rest-endpoint-methods.js](https://github.com/octokit/plugin-rest-endpoint-methods.js)|
+|`@octokit/plugin-rest-endpoint-methods`|`3.17.0`||[https://github.com/octokit/plugin-rest-endpoint-methods.js](https://github.com/octokit/plugin-rest-endpoint-methods.js)|
 |`@octokit/plugin-retry`|`3.0.2`||[https://github.com/octokit/plugin-retry.js](https://github.com/octokit/plugin-retry.js)|
 |`@octokit/plugin-throttling`|`3.2.1`||[https://github.com/octokit/plugin-throttling.js](https://github.com/octokit/plugin-throttling.js)|
 |`@octokit/request-error`|`2.0.1`||[https://github.com/octokit/request-error.js](https://github.com/octokit/request-error.js)|
 |`@octokit/request`|`5.4.4`||[https://github.com/octokit/request.js](https://github.com/octokit/request.js)|
-|`@octokit/rest`|`17.9.3`||[https://github.com/octokit/rest.js](https://github.com/octokit/rest.js)|
-|`@octokit/types`|`4.1.6`||[https://github.com/octokit/types.ts](https://github.com/octokit/types.ts)|
+|`@octokit/rest`|`17.11.0`||[https://github.com/octokit/rest.js](https://github.com/octokit/rest.js)|
+|`@octokit/types`|`4.1.9`||[https://github.com/octokit/types.ts](https://github.com/octokit/types.ts)|
 |`@sindresorhus/is`|`1.2.0`|Sindre Sorhus|[https://github.com/sindresorhus/is](https://github.com/sindresorhus/is)|
 |`@tootallnate/once`|`1.1.2`|Nathan Rajlich|[https://github.com/TooTallNate/once](https://github.com/TooTallNate/once)|
 |`@types/color-name`|`1.1.1`||[https://github.com/DefinitelyTyped/DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)|
@@ -183,9 +182,10 @@ MIT License - [https://opensource.org/licenses/MIT](https://opensource.org/licen
 |`@types/lodash`|`4.14.155`||[https://github.com/DefinitelyTyped/DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)|
 |`@types/long`|`4.0.1`||[https://github.com/DefinitelyTyped/DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)|
 |`@types/node-fetch`|`2.5.7`||[https://github.com/DefinitelyTyped/DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)|
-|`@types/node`|`13.13.9`||[https://github.com/DefinitelyTyped/DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)|
+|`@types/node`|`13.13.10`||[https://github.com/DefinitelyTyped/DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)|
 |`@types/retry`|`0.12.0`||[https://github.com/DefinitelyTyped/DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)|
 |`@types/semver`|`7.2.0`||[https://github.com/DefinitelyTyped/DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)|
+|`@types/stack-trace`|`0.0.29`||[https://github.com/DefinitelyTyped/DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)|
 |`@types/yargs-parser`|`15.0.0`||[https://github.com/DefinitelyTyped/DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)|
 |`@types/yargs`|`15.0.5`||[https://github.com/DefinitelyTyped/DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)|
 |`@zeit/ncc`|`0.22.3`||[https://github.com/zeit/ncc](https://github.com/zeit/ncc)|
@@ -288,8 +288,8 @@ MIT License - [https://opensource.org/licenses/MIT](https://opensource.org/licen
 |`map-obj`|`4.1.0`|Sindre Sorhus|[https://github.com/sindresorhus/map-obj](https://github.com/sindresorhus/map-obj)|
 |`merge2`|`1.4.1`||[https://github.com/teambition/merge2](https://github.com/teambition/merge2)|
 |`micromatch`|`4.0.2`|Jon Schlinkert|[https://github.com/micromatch/micromatch](https://github.com/micromatch/micromatch)|
-|`mime-db`|`1.43.0`||[https://github.com/jshttp/mime-db](https://github.com/jshttp/mime-db)|
-|`mime-types`|`2.1.26`||[https://github.com/jshttp/mime-types](https://github.com/jshttp/mime-types)|
+|`mime-db`|`1.44.0`||[https://github.com/jshttp/mime-db](https://github.com/jshttp/mime-db)|
+|`mime-types`|`2.1.27`||[https://github.com/jshttp/mime-types](https://github.com/jshttp/mime-types)|
 |`mime`|`2.4.6`|Robert Kieffer|[https://github.com/broofa/mime](https://github.com/broofa/mime)|
 |`mimic-fn`|`2.1.0`|Sindre Sorhus|[https://github.com/sindresorhus/mimic-fn](https://github.com/sindresorhus/mimic-fn)|
 |`ms`|`2.1.2`||[https://github.com/zeit/ms](https://github.com/zeit/ms)|
@@ -333,6 +333,7 @@ MIT License - [https://opensource.org/licenses/MIT](https://opensource.org/licen
 |`snakecase-keys`|`3.2.0`|Ben Drucker|[https://github.com/bendrucker/snakecase-keys](https://github.com/bendrucker/snakecase-keys)|
 |`snakeize`|`0.1.0`|James Halliday|[https://github.com/nathan7/snakeize](https://github.com/nathan7/snakeize)|
 |`source-map-support`|`0.5.19`||[https://github.com/evanw/node-source-map-support](https://github.com/evanw/node-source-map-support)|
+|`stack-trace`|`0.0.10`|Felix Geisendörfer|[https://github.com/felixge/node-stack-trace](https://github.com/felixge/node-stack-trace)|
 |`stream-events`|`1.0.5`|Stephen Sawchuk|[https://github.com/stephenplusplus/stream-events](https://github.com/stephenplusplus/stream-events)|
 |`stream-shift`|`1.0.1`|Mathias Buus|[https://github.com/mafintosh/stream-shift](https://github.com/mafintosh/stream-shift)|
 |`string-width`|`4.2.0`|Sindre Sorhus|[https://github.com/sindresorhus/string-width](https://github.com/sindresorhus/string-width)|
@@ -357,7 +358,7 @@ MIT License - [https://opensource.org/licenses/MIT](https://opensource.org/licen
 |`uuid`|`3.4.0`||[https://github.com/uuidjs/uuid](https://github.com/uuidjs/uuid)|
 |`uuid`|`7.0.3`||[https://github.com/uuidjs/uuid](https://github.com/uuidjs/uuid)|
 |`walkdir`|`0.4.1`|Ryan Day|[https://github.com/soldair/node-walkdir](https://github.com/soldair/node-walkdir)|
-|`windows-release`|`3.3.0`|Sindre Sorhus|[https://github.com/sindresorhus/windows-release](https://github.com/sindresorhus/windows-release)|
+|`windows-release`|`3.3.1`|Sindre Sorhus|[https://github.com/sindresorhus/windows-release](https://github.com/sindresorhus/windows-release)|
 |`wrap-ansi`|`6.2.0`|Sindre Sorhus|[https://github.com/chalk/wrap-ansi](https://github.com/chalk/wrap-ansi)|
 |`xdg-basedir`|`4.0.0`|Sindre Sorhus|[https://github.com/sindresorhus/xdg-basedir](https://github.com/sindresorhus/xdg-basedir)|
 |`xtend`|`4.0.2`|Raynos|[https://github.com/Raynos/xtend](https://github.com/Raynos/xtend)|
