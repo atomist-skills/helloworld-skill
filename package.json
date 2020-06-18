@@ -16,7 +16,7 @@
   "icon": "https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/npm-512.png",
   "main": "node_modules/@atomist/skill/lib/function.js",
   "dependencies": {
-    "@atomist/skill": "0.1.0-master.20200609120639"
+    "@atomist/skill": "0.1.0-master.20200618080716"
   },
   "devDependencies": {
     "@google-cloud/functions-framework": "^1.5.1"
