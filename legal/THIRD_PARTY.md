@@ -373,7 +373,7 @@ MIT License - [https://opensource.org/licenses/MIT](https://opensource.org/licen
 ## Contact
 
 Please send any questions or inquires to [oss@atomist.com](mailto:oss@atomist.com).
-
+             
 ---
 
 Created by [Atomist][atomist].
