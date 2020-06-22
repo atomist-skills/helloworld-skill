@@ -20,7 +20,7 @@ Need Help?  [Join our Slack workspace][slack].
 [slack]: https://join.atomist.com/ (Atomist Community Slack)
  
    
-   
+    
     
      
    
