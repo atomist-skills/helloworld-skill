@@ -21,7 +21,6 @@ This page details all runtime OSS dependencies of `@atomist/helloworld-skill`.
 |[MIT](#mit)|215|
 
 #### Apache-2.0
-
 Apache License 2.0 - [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
 | Name | Version | Publisher | Repository |
@@ -55,7 +54,6 @@ Apache License 2.0 - [http://www.apache.org/licenses/LICENSE-2.0](http://www.apa
 |`teeny-request`|`6.0.3`|fhinkel|[https://github.com/googleapis/teeny-request](https://github.com/googleapis/teeny-request)|
 
 #### BSD-2-Clause
-
 BSD 2-Clause "Simplified" License - [https://opensource.org/licenses/BSD-2-Clause](https://opensource.org/licenses/BSD-2-Clause)
 
 | Name | Version | Publisher | Repository |
@@ -68,7 +66,6 @@ BSD 2-Clause "Simplified" License - [https://opensource.org/licenses/BSD-2-Claus
 |`shimmer`|`1.2.1`|Forrest L Norvell|[https://github.com/othiym23/shimmer](https://github.com/othiym23/shimmer)|
 
 #### BSD-3-Clause
-
 BSD 3-Clause "New" or "Revised" License - [https://opensource.org/licenses/BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
 
 | Name | Version | Publisher | Repository |
@@ -91,7 +88,6 @@ BSD 3-Clause "New" or "Revised" License - [https://opensource.org/licenses/BSD-3
 |`sprintf-js`|`1.0.3`|Alexandru Marasteanu|[https://github.com/alexei/sprintf.js](https://github.com/alexei/sprintf.js)|
 
 #### CC0-1.0
-
 Creative Commons Zero v1.0 Universal - [https://creativecommons.org/publicdomain/zero/1.0/legalcode](https://creativecommons.org/publicdomain/zero/1.0/legalcode)
 
 | Name | Version | Publisher | Repository |
@@ -99,7 +95,6 @@ Creative Commons Zero v1.0 Universal - [https://creativecommons.org/publicdomain
 |`type-fest`|`0.12.0`|Sindre Sorhus|[https://github.com/sindresorhus/type-fest](https://github.com/sindresorhus/type-fest)|
 
 #### GPL-2.0
-
 GNU General Public License v2.0 only - [https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html](https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html)
 
 | Name | Version | Publisher | Repository |
@@ -107,7 +102,6 @@ GNU General Public License v2.0 only - [https://www.gnu.org/licenses/old-license
 |`node-forge`|`0.9.1`|Digital Bazaar, Inc.|[https://github.com/digitalbazaar/forge](https://github.com/digitalbazaar/forge)|
 
 #### GPL-3.0
-
 GNU General Public License v3.0 only - [https://www.gnu.org/licenses/gpl-3.0-standalone.html](https://www.gnu.org/licenses/gpl-3.0-standalone.html)
 
 | Name | Version | Publisher | Repository |
@@ -115,7 +109,6 @@ GNU General Public License v3.0 only - [https://www.gnu.org/licenses/gpl-3.0-sta
 |`jszip`|`3.5.0`|Stuart Knightley|[https://github.com/Stuk/jszip](https://github.com/Stuk/jszip)|
 
 #### ISC
-
 ISC License - [https://www.isc.org/downloads/software-support-policy/isc-license/](https://www.isc.org/downloads/software-support-policy/isc-license/)
 
 | Name | Version | Publisher | Repository |
@@ -152,7 +145,6 @@ ISC License - [https://www.isc.org/downloads/software-support-policy/isc-license
 |`yargs-parser`|`18.1.3`|Ben Coe|[https://github.com/yargs/yargs-parser](https://github.com/yargs/yargs-parser)|
 
 #### MIT
-
 MIT License - [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
 
 | Name | Version | Publisher | Repository |
