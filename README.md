@@ -9,7 +9,7 @@ Atomist Skill to demonstrate a simple command handler
 
 # What's it for
 
-<!---atomist-skill-readme:end--->
+<!---atomist-skill-readme:end---> 
 
 ---   
 
