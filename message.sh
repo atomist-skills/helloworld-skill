@@ -1,6 +1,6 @@
 echo '{
-    "users": [
-        "cd"
+    "channels": [
+        "say-it-in-slack-skill"
     ],
     "body": {
 	"attachments": [],
