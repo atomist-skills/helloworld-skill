@@ -35,7 +35,7 @@ echo '{
                         },
                         "style": "primary",
                         "value": "click_me_123",
-                        "action_id": "command:promote"
+                        "action_id": "command::promote"
                     },
                     {
                         "type": "button",
@@ -46,7 +46,7 @@ echo '{
                         },
                         "style": "danger",
                         "value": "click_me_123",
-                        "action_id": "command:demote"
+                        "action_id": "command::demote"
                     }
                 ]
             }
