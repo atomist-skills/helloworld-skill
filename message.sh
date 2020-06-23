@@ -3,18 +3,7 @@ echo '{
         "say-it-in-slack-skill"
     ],
     "body": {
-	"attachments": [{ "fallback": "test" }],
-	"blocks": [
-		{
-			"type": "section",
-			"text": {
-				"type": "mrkdwn",
-				"text": "Hello, this is a block message"
-			}
-		},
-		{
-			"type": "divider"
-		}
-	]
+    "fallback": "test",
+    "blocks": "[\n        {\n            \"type\": \"section\",\n            \"text\": {\n                \"type\": \"mrkdwn\",\n                \"text\": \"Hello, this is a block message\"\n            }\n        },\n        {\n            \"type\": \"divider\"\n        }\n    ]"
 }
 }' > $ATOMIST_MESSAGES_DIR/test.json
