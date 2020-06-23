@@ -10,7 +10,7 @@ Atomist Skill to demonstrate a simple command handler
 # What's it for
 
 <!---atomist-skill-readme:end---> 
-
+  
 ---    
 
 Created by [Atomist][atomist].
