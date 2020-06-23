@@ -34,7 +34,8 @@ echo '{
                             "text": "Approve"
                         },
                         "style": "primary",
-                        "value": "click_me_123"
+                        "value": "click_me_123",
+                        "action_id": "command:promote"
                     },
                     {
                         "type": "button",
@@ -44,9 +45,24 @@ echo '{
                             "text": "Deny"
                         },
                         "style": "danger",
-                        "value": "click_me_123"
+                        "value": "click_me_123",
+                        "action_id": "command:demote"
                     }
                 ]
+            }
+        ]
+    },
+    "options": {
+        "actions": [
+            {
+                "id": "promote",
+                "command": "promote",
+                "parameters": []
+            },
+            {
+                "id": "demote",
+                "command": "demote",
+                "parameters": []
             }
         ]
     }
