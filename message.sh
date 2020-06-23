@@ -3,7 +3,7 @@ echo '{
         "say-it-in-slack-skill"
     ],
     "body": {
-	"attachments": [],
+	"text": "bla",
 	"blocks": [
 		{
 			"type": "section",
