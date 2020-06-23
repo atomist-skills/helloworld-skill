@@ -3,7 +3,7 @@ echo '{
         "say-it-in-slack-skill"
     ],
     "body": {
-	"attachements": [{ "fallback": "test" }],
+	"attachments": [{ "fallback": "test" }],
 	"blocks": [
 		{
 			"type": "section",
