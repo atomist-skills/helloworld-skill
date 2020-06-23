@@ -3,6 +3,7 @@ echo '{
         "cd"
     ],
     "body": {
+        "fallback": "Hello, this is a block message",
         "blocks": [
             {
                 "type": "section",
