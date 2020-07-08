@@ -11,7 +11,7 @@ skill:
   parameters:
     - string:
         name: channel
-        displayName: Name of channel to send messages to
+        displayName: Name of channel to send messages to bla
         description: >-
           Specify the name of the chat channel you want to send issue
           notifications to when there are no channels linked
