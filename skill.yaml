@@ -1,6 +1,5 @@
 apiVersion: 1
 skill:
-
   artifacts:
     gcf:
       - memory: 1024
