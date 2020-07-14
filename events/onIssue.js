@@ -17,6 +17,6 @@
 exports.handler = async (ctx) => {
      const issue = ctx.data.Issue[0];
      await ctx.message.send(
-         `Issue activity on ${issue.number}: ${issue.title}`,
+         `Bla Issue activity on ${issue.number}: ${issue.title}`,
          { channels: issue.repo?.channels?.map(c => c.name) || ctx.configuration[0].parameters.channel });
 };
