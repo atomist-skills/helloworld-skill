@@ -19,7 +19,7 @@
     "@atomist/skill": "0.1.0-master.20200618080716"
   },
   "devDependencies": {
-    "@google-cloud/functions-framework": "^1.5.1"
+    "@google-cloud/functions-framework": "^1.6.0"
   },
   "scripts": {
     "start": "functions-framework --target=entryPoint --signature-type=event",
