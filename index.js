@@ -26,12 +26,14 @@ const helloWorld = async ctx => {
 		blocks: [
 			{
 				type: "input",
+				block_id: "message",
 				label: {
 					type: "plain_text",
 					text: "Message"
 				},
 				element: {
 					type: "plain_text_input",
+					action_id: "input",
 					placeholder: {
 						type: "plain_text",
 						text: "Your message",

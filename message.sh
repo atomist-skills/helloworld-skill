@@ -8,19 +8,7 @@ echo '{
                 "type": "section",
                 "text": {
                     "type": "mrkdwn",
-                    "text": "You have a new request:\n*<google.com|Fred Enriquez - Time Off request>*"
-                }
-            },
-            {
-                "type": "section",
-                "text": {
-                    "type": "mrkdwn",
-                    "text": "*Type:*\nPaid time off\n*When:*\nAug 10-Aug 13\n*Hours:* 16.0 (2 days)\n*Remaining balance:* 32.0 hours (4 days)\n*Comments:* \"Family in town, going camping!\""
-                },
-                "accessory": {
-                    "type": "image",
-                    "image_url": "https://api.slack.com/img/blocks/bkb_template_images/approvalsNewDevice.png",
-                    "alt_text": "computer thumbnail"
+                    "text": ":wave: Hello World"
                 }
             },
             {
@@ -31,22 +19,18 @@ echo '{
                         "text": {
                             "type": "plain_text",
                             "emoji": true,
-                            "text": "Approve"
+                            "text": "Close"
                         },
-                        "style": "primary",
-                        "value": "click_me_123",
-                        "action_id": "command::promote"
+                        "action_id": "command::close"
                     },
                     {
                         "type": "button",
                         "text": {
                             "type": "plain_text",
                             "emoji": true,
-                            "text": "Deny"
+                            "text": "Say hi!"
                         },
-                        "style": "danger",
-                        "value": "click_me_123",
-                        "action_id": "command::demote"
+                        "action_id": "modal::say-hi"
                     }
                 ]
             }
@@ -55,14 +39,48 @@ echo '{
     "options": {
         "actions": [
             {
-                "id": "promote",
-                "command": "promote",
+                "id": "close",
+                "command": "close",
                 "parameters": []
-            },
+            }
+        ],
+        "modals": [
             {
-                "id": "demote",
-                "command": "demote",
-                "parameters": []
+                "id": "say-hi",
+                "view": {
+                    "type": "modal",
+                    "title": {
+                        "type": "plain_text",
+                        "text": "Greeting"
+                    },
+                    "blocks": [
+                        {
+                            "type": "input",
+                            "block_id": "message",
+                            "label": {
+                                "type": "plain_text",
+                                "text": "Message"
+                            },
+                            "element": {
+                                "type": "plain_text_input",
+                                "action_id": "input",
+                                "placeholder": {
+                                    "type": "plain_text",
+                                    "text": "Your message"
+                                },
+                                "multiline": true
+                            }
+                        }
+                    ],
+                    "close": {
+                        "type": "plain_text",
+                        "text": "Cancel"
+                    },
+                    "submit": {
+                        "type": "plain_text",
+                        "text": "Send"
+                    }
+                }
             }
         ]
     }

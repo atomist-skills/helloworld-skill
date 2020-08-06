@@ -16,7 +16,7 @@
   "icon": "https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/npm-512.png",
   "main": "index.js",
   "dependencies": {
-    "@atomist/skill": "^0.1.1-27"
+    "@atomist/skill": "^0.1.1-28"
   },
   "devDependencies": {
     "@google-cloud/functions-framework": "^1.6.0"
