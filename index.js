@@ -23,7 +23,7 @@ const helloWorld = async ctx => {
 				type: "section",
 				text: {
 					type: "mrkdwn",
-					text: "Hello World, :wave:"
+					text: ":wave: Hello World"
 				}
 			},
 			{
