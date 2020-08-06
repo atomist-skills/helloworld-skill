@@ -17,6 +17,39 @@
 const skill = require("@atomist/skill");
 
 const helloWorld = async ctx => {
+	const modal = {
+		type: "modal",
+		title: {
+			type: "plain_text",
+			text: "Greeting"
+		},
+		blocks: [
+			{
+				type: "input",
+				label: {
+					type: "plain_text",
+					text: "Message"
+				},
+				element: {
+					type: "plain_text_input",
+					placeholder: {
+						type: "plain_text",
+						text: "Your message",
+					},
+					multiline: true
+				},
+			}
+		],
+		close: {
+			type: "plain_text",
+			text: "Cancel"
+		},
+		submit: {
+			type: "plain_text",
+			text: "Send"
+		},
+	}
+
 	const msg = {
 		blocks: [
 			{
@@ -35,8 +68,14 @@ const helloWorld = async ctx => {
 							type: "plain_text",
 							text: "Say hi!",
 						},
-						value: "click_me_123",
 					}, "helloWorld", { response: "hi"}),
+					skill.slack.block.buttonForModal({
+						type: "button",
+						text: {
+							type: "plain_text",
+							text: "Respond",
+						},
+					}, "helloWorld", modal),
 				]
 			}
 		]
