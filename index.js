@@ -32,5 +32,4 @@ const helloWorld = async ctx => {
 
 exports.entryPoint = skill.entryPoint({
 	helloWorld,
-	RebaseOnPush: helloWorld,
 });
