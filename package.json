@@ -19,7 +19,10 @@
     "@atomist/skill": "^0.1.1-28"
   },
   "devDependencies": {
-    "@google-cloud/functions-framework": "^1.6.0"
+    "@google-cloud/functions-framework": "^1.6.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5"
   },
   "scripts": {
     "start": "functions-framework --target=entryPoint --signature-type=event",
@@ -28,6 +31,15 @@
     "skill:generate": "atm-skill generate --no-validate",
     "skill:bundle": "atm-skill bundle --minify --source-map --file=index.js",
     "skill:package": "atm-skill package",
-    "skill:register": "atm-skill register"
+    "skill:register": "atm-skill register",
+    "atm:lint:prettier": "prettier --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.@(graphql|json|markdown|yaml|yml|md)": "npm run atm:lint:prettier"
   }
 }
