@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 -   Fix build script. [e9e7f76](https://github.com/atomist-skills/helloworld-skill/commit/e9e7f76b3c0a3d0ff5d9861ba9d305837567cafe)
 -   Test. [#28](https://github.com/atomist-skills/helloworld-skill/issues/28) by [@cdupuis](https://github.com/cdupuis)
 -   Fix bundling. [7082cbc](https://github.com/atomist-skills/helloworld-skill/commit/7082cbcb30c5e30edd81f272646ba39cbe8a879a)
+-   Fix bundling. [#64](https://github.com/atomist-skills/helloworld-skill/issues/64)
 
 ## [0.2.2-1](https://github.com/atomist-skills/helloworld-skill/compare/0.2.1...0.2.2-1) - 2020-06-04
 
