@@ -14,22 +14,13 @@
     "url": "https://github.com/atomist-skills/hellworld-skill.git"
   },
   "icon": "https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/npm-512.png",
-  "main": "index.js",
-  "dependencies": {
-    "@atomist/skill": "^0.5.0"
-  },
-  "devDependencies": {
-    "@google-cloud/functions-framework": "^1.7.1",
-    "husky": "^4.3.0",
-    "lint-staged": "^10.5.1",
-    "prettier": "^2.1.2"
-  },
+  "main": "bundle/index.js",
   "scripts": {
     "start": "functions-framework --target=entryPoint --signature-type=event",
     "skill": "npm run skill:generate && npm run skill:bundle && npm run skill:package",
     "skill:clean": "atm-skill clean",
     "skill:generate": "atm-skill generate --no-validate",
-    "skill:bundle": "atm-skill bundle --minify --source-map --file=index.js",
+    "skill:bundle": "atm-skill bundle --file=index.js",
     "skill:package": "atm-skill package",
     "skill:register": "atm-skill register",
     "atm:lint:prettier": "prettier --write"
