@@ -1,20 +1,32 @@
 {
   "name": "@atomist/helloworld-skill",
   "description": "Hello World",
-  "author": {
-    "name": "Atomist"
-  },
   "keywords": [
     "CHAT"
   ],
+  "homepage": "https://github.com/atomist-skills/helloworld-skill",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/atomist-skills/hellworld-skill",
+  "author": {
+    "name": "Atomist, Inc.",
+    "email": "oss@atomist.com",
+    "url": "https://atomist.com"
+  },
+  "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atomist-skills/hellworld-skill.git"
+    "url": "https://github.com/atomist-skills/helloworld-skill.git"
   },
-  "icon": "https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/npm-512.png",
-  "main": "index.js",
+  "scripts": {
+    "atm:lint:prettier": "prettier --write",
+    "gql:gen": "atm-skill gql-generate",
+    "skill": "npm run skill:generate && npm run skill:bundle && npm run skill:package",
+    "skill:bundle": "atm-skill bundle --minify --source-map --file=index.js",
+    "skill:clean": "atm-skill clean",
+    "skill:generate": "atm-skill generate --no-validate",
+    "skill:package": "atm-skill package",
+    "skill:register": "atm-skill register",
+    "start": "functions-framework --target=entryPoint --signature-type=event"
+  },
   "dependencies": {
     "@atomist/skill": "^0.5.1"
   },
@@ -24,21 +36,12 @@
     "lint-staged": "^10.5.1",
     "prettier": "^2.1.2"
   },
-  "scripts": {
-    "start": "functions-framework --target=entryPoint --signature-type=event",
-    "skill": "npm run skill:generate && npm run skill:bundle && npm run skill:package",
-    "skill:clean": "atm-skill clean",
-    "skill:generate": "atm-skill generate --no-validate",
-    "skill:bundle": "atm-skill bundle --minify --source-map --file=index.js",
-    "skill:package": "atm-skill package",
-    "skill:register": "atm-skill register",
-    "atm:lint:prettier": "prettier --write"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
   },
+  "icon": "https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/npm-512.png",
   "lint-staged": {
     "**/*.@(graphql|json|markdown|yaml|yml|md)": "npm run atm:lint:prettier"
   }
