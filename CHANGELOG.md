@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased](https://github.com/atomist-skills/helloworld-skill/compare/0.2.2-1...HEAD)
 
+### Changed
+
+-   Can the branch protection rules be removed from this repo. [#65](https://github.com/atomist-skills/helloworld-skill/issues/65)
+
 ### Removed
 
 -   Remove build script. [02755e9](https://github.com/atomist-skills/helloworld-skill/commit/02755e9e32e6e66a6abeb308c44e78539acc879d)
