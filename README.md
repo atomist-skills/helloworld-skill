@@ -19,3 +19,4 @@ Created by [Atomist][atomist]. Need Help? [Join our Slack workspace][slack].
 [slack]: https://join.atomist.com/ "Atomist Community Slack"
 
 sk_live_abcdef012345678998765432
+AIza0123456789-abcdefghijklmn_pqrstuvw
