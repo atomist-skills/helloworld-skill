@@ -20,3 +20,4 @@ Created by [Atomist][atomist]. Need Help? [Join our Slack workspace][slack].
 
 sk_live_abcdef012345678998765432
 AIza0123456789-abcdefghijklmn_pqrstuvw
+https://user:pass@word.com/f?token=0123456789abcdef0123456789abcdef01234567&timeout=90
